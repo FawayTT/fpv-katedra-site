@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katedra informatiky | FPV | Univerzita Mateja Bela</title>
+    <meta name="description" content="Záverečná práca - statická webová stránka" />
+    <meta name="author" content="Vojtech Molnár" />
+    <meta name="keywords" content="FPV, UMB, Univerzita Mateja Bela, katedra informatiky" />
+    <meta name="theme-color" content="#26636F" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="fonts/Lato/stylesheet.css" />
+    <script src="https://kit.fontawesome.com/b48d858b7c.js" crossorigin="anonymous"></script>
+  </head>
+  <body data-spy="scroll" data-offset="50" class="bg-globe">
+    <header>
+      <!-- NAVIGÁCIA -->
+      <nav class="navbar navbar-main navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo FPV" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Domov</a></li>
+              <li class="nav-item"><a href="clenovia.html" class="nav-link">Členovia</a></li>
+              <li class="nav-item"><a href="oznamy.html" class="nav-link">Oznamy</a></li>
+              <li class="nav-item"><a href="spolupraca.html" class="nav-link">Spolupráca</a></li>
+              <li class="nav-item active"><a href="vedaavyskum.html" class="nav-link">Veda a výskum</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container my-4 bg-lightwhite rounded">
+      <h2 class="text-dark">Výskum v oblasti Informatiky na katedre je rozdelený do nasledujúcich oblastí:</h2>
+      <ul class="list-group py-4 text-center oblasti bg-white rounded">
+        <li class="list-group-item">počítačové videnie, strojové učenie a robotika,</li>
+        <li class="list-group-item">vysokovýkonné počítanie</li>
+        <li class="list-group-item">sieťové technológie a Internet vecí</li>
+        <li class="list-group-item">virtuálna a rozšírená realita</li>
+        <li class="list-group-item">AmI systémy v inteligentných budovách</li>
+        <li class="list-group-item">teoretická informatika</li>
+        <li class="list-group-item">teória vyučovania informatiky a príprava budúcich učiteľov informatiky.</li>
+      </ul>
+      <div class="row my-3 py-3 bg-light rounded">
+        <div class="col-md-4"><h2>Katedrové semináre:</h2></div>
+        <div class="col-md-8"><p>Katedra informatiky organizuje semináre, na ktoré sú všetci (učitelia, študenti, ostatní záujemcovia) srdečne pozvaní. Semináre sú organizované v rámci univerzitného projektuŠpecializované vzdelávanie v prírodných vedách.</p></div>
+      </div>
+      <div class="row my-3 py-3 bg-light rounded">
+        <div class="col-md-4"><h2>Projekty:</h2></div>
+        <div class="col-md-8"><p>Členovia katedry informatiky riešia alebo sa podieľajú na riešení vedeckých, rozvojových a iných projektov (VEGA, KEGA APVV,Rozvojové IT projekty MŠ SR, ESF a iné.</p></div>
+      </div>
+      <div class="row my-3 py-3 bg-light rounded">
+        <div class="col-md-4"><h2>Konferencie:</h2></div>
+        <div class="col-md-8"><p>Katedra organizuje každý rok v marci medzinárodnú konferenciu o didaktike informatiky DidInfo. Každých päť rokov pri príležitosti vzniku katedry je usporadúvaná konferencia I&IT (Informatics and Information Technology).</p></div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="fixed-background footer-fixed mt-5 d-flex align-items-center">
+        <div class="container">
+          <div class="row text-light d-flex justify-content-center my-4">
+            <img id="footerLogo" src="images/footer-logo.png" alt="" />
+          </div>
+          <div class="row text-light d-flex justify-content-center my-8">
+            <h4 id="footerText">&copy; 2021 <a class="text-light" href="mailto:vojtechm@outlook.com">Vojtech Molnár</a></h4>
+          </div>
+        </div>
+        <div class="fixed-wrap">
+          <div class="fixed"></div>
+        </div>
+        <!-- SPODNA SEKCIA FOOTERU -->
+      </div>
+      <div class="footer-bottom text-center bg-black p-3">
+        <p class="text-light m-0"><a id="footerLink" href="https://www.fpv.umb.sk/katedry/katedra-informatiky/" class="text-bottom-footer">https://www.fpv.umb.sk/</a></p>
+      </div>
+    </footer>
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="node_modules\three\build\three.min.js"></script>
+    <script src="node_modules/vanta/dist/vanta.globe.min.js"></script>
+    <script>
+      VANTA.GLOBE({
+        el: '.bg-globe',
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x7f7f7f,
+        backgroundColor: 0xffffff,
+      });
+    </script>
+  </body>
+</html>

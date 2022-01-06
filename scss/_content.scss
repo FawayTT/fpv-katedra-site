@@ -1,0 +1,196 @@
+// sekcia s oznamami
+.oznamy {
+  img {
+    max-width: 280px;
+    height: 250px;
+  }
+  div {
+    margin: 5px;
+  }
+  p {
+    height: 100px;
+  }
+  div {
+    transition: background 0.3s linear;
+    &:hover {
+      background: rgba(255, 255, 255, 0.856) !important;
+    }
+  }
+}
+// Responzivne oramovanie oznamov
+@media only screen and (max-width: 1200px) {
+  .oznamy {
+    .border-lg-bottom-grey {
+      border-bottom: 1px solid #e3e7eb !important;
+    }
+    .border-lg-top-0 {
+      border-top: 0px !important;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .oznamy {
+    .border-md-top-0 {
+      border-top: 0px !important;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .oznamy {
+    .border-md-right {
+      border-right: 1px solid #e3e7eb !important;
+    }
+    .border-md-left {
+      border-left: 1px solid #e3e7eb !important;
+    }
+  }
+}
+// sekcia s posuvnym pozadim
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000 !important;
+  padding: 5rem 0;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999 !important;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background: url('../images/siteIcon-1700.jpg');
+  background-color: rgb(14, 35, 39);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  filter: brightness(40%);
+}
+// posuvne pozadie pre footer
+.footer-fixed {
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.488);
+  height: 450px;
+  .fixed {
+    z-index: -999 !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background: url('../images/siteIcon-1700.jpg');
+    background-color: rgba(22, 135, 163, 0.774);
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    background-position: 0% 100px;
+    background-repeat: no-repeat;
+    filter: brightness(20%);
+  }
+  img {
+    height: 70px;
+  }
+}
+// galeria
+.galeria {
+  background: rgba(0, 0, 0, 0.89) !important;
+  text-decoration: none !important;
+  h3 {
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease;
+    &:hover {
+      font-size: 1.7rem !important;
+    }
+    &:active {
+      color: white !important;
+    }
+  }
+  &[aria-expanded='true'] {
+    h3 {
+      font-size: 1.7rem !important;
+      color: white !important;
+    }
+  }
+}
+
+#galeria {
+  background: rgba(0, 0, 0, 0.89) !important;
+  img {
+    object-fit: cover;
+    margin: 1rem;
+    margin-left: 0;
+    height: 80%;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+// uprava rozmeru obrazka v karte
+.card {
+  img {
+    object-fit: cover;
+    min-width: 220px;
+  }
+}
+// nahladovy obrazok v oznamoch
+.novinky {
+  .card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+  }
+  .card {
+    border-color: rgba(0, 0, 0, 0.199) !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);
+    filter: saturate(0);
+  }
+  .card-body {
+    transition: 1s ease;
+    &:hover {
+      filter: hue-rotate(30deg);
+    }
+  }
+}
+
+// <a> zobrazit viac/menej obsahu v novinkach
+.show-more::before {
+  content: 'Zobraziť viac...';
+}
+.show-more[aria-expanded='true']::before {
+  content: 'Zobraziť menej...';
+}
+// sekcia veda a vyskum list-group
+.oblasti {
+  counter-reset: li;
+  text-transform: uppercase;
+  li:nth-child(odd) {
+    background: rgba(0, 128, 128, 0.308);
+  }
+  li:nth-child(even) {
+    background: rgba(0, 128, 128, 0.082);
+  }
+  li:before {
+    counter-increment: li;
+    content: counter(li) '. ';
+  }
+}
+#info {
+  top: 200;
+}
+#footerText {
+  opacity: 0;
+}
+#footerLogo {
+  opacity: 0;
+}
+#clenovia {
+  .card {
+    opacity: 0;
+  }
+}

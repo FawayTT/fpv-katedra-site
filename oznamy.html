@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katedra informatiky | FPV | Univerzita Mateja Bela</title>
+    <meta name="description" content="Záverečná práca - statická webová stránka" />
+    <meta name="author" content="Vojtech Molnár" />
+    <meta name="keywords" content="FPV, UMB, Univerzita Mateja Bela, katedra informatiky" />
+    <meta name="theme-color" content="#26636F" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="fonts/Lato/stylesheet.css" />
+    <script src="https://kit.fontawesome.com/b48d858b7c.js" crossorigin="anonymous"></script>
+  </head>
+  <body data-spy="scroll" data-offset="50">
+    <header>
+      <!-- NAVIGÁCIA -->
+      <nav class="navbar navbar-main navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo FPV" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Domov</a></li>
+              <li class="nav-item"><a href="clenovia.html" class="nav-link">Členovia</a></li>
+              <li class="nav-item active"><a href="oznamy.html" class="nav-link">Oznamy</a></li>
+              <li class="nav-item"><a href="spolupraca.html" class="nav-link">Spolupráca</a></li>
+              <li class="nav-item"><a href="vedaavyskum.html" class="nav-link">Veda a výskum</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- SEKCIA OZNAMY -->
+    <main class="container mt-4">
+      <div class="row novinky m-0 p-0">
+        <div class="col-lg-6 p-0 mb-4 mb-lg-0 pr-lg-2">
+          <!-- OZNAM -->
+          <div class="card p-0 mb-4 bg-dark" id="summerhpc">
+            <img class="card-img-top" src="images/1.png" alt="Summer of HPC" />
+            <div class="card-body bg-teal">
+              <h2 class="text-center card-title font-weight-bold text-white">Program Summer of HPC pre študentov</h2>
+              <hr class="border-primary" />
+              <p class="card-text">Program Summer of HPC je program PRACE, ktorý ponúka študentom možnoť zúčastniť sa na riešení zaujímavých projektov počas leta v HPC centách po celéj Európe. Zo všetkych uchádzačov bude vybraných 66, ktorí sa budú podieľať na 33 projektoch na 14 hostiteľských pracoviskách. Počas dvoch letných mesiacov budú pracovať na projektoch PRACE a na záver vytvoria správu a video o svojich dosiahnutých výsledkoch.</p>
+              <p><a data-toggle="collapse" class="show-more text-light" href="#collapseOznam1"></a></p>
+              <div class="collapse" id="collapseOznam1">
+                <p>
+                  Každý z vybraných študentov bude finančne podporený počas obdobia od 30. júna do 31. augusta 2021 čiastkou vo výške 1300 € počas leta. <br /><br />
+                  Študenti kočiacich ročníkov Bc. štúdia alebo Mgr. štúdia majú možnosť zapojiť sa do programu PRACE Summer of HPC, ktorý sa uskutiční počas Júla a Augusta 2021. Bude pozostávať z spoločného tréningového týždňa a dvoch mesiacov spolupráce so špičkovými centrami pre vysokovýkonné počítanie po celej Európe. Program ponúka uchádzačom možnosť zdieľať svoje skúsenosti, ako aj dozvedieť sa nové poznatky o PRACE a HPC.
+                  <br /><br />
+                  Vzhľadom na COVID-19 pandémiu počas leta 2021, bude program uskučnený online formou, vzhľadom na limitovanú mobilitu v Európe. Dvaja účastníci programu budú ocenený za vytvorenie najlepšieho projektu a naplnenie ducha projektu..
+                </p>
+                <p class="card-text text-center py-4">
+                  <a href="https://summerofhpc.prace-ri.eu/" class="btn-lg btn-info">Prejsť na stránku Summer of HPC</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- OZNAM -->
+          <div class="card p-0 bg-dark" id="temy">
+            <img class="card-img-top" src="images/3.png" alt="Témy pre záverečné práce" />
+            <div class="card-body bg-teal">
+              <h2 class="text-center card-title font-weight-bold text-white">Témy pre záverečné práce na akademický rok 2021-2022</h2>
+              <hr class="border-primary" />
+              <p class="card-text text-center">
+                Témy pre záverečné bakalárske a magisterské práce sú zverejnené na katedrovej stránke: <br />
+                <br />
+                <a href="https://www.fpv.umb.sk/katedry/katedra-informatiky/pre-studentov/temy-pre-zaverecne-prace-na-akademicky-rok-2021.html" class="btn-lg btn-info">Témy záverečných prác</a><br /><br />
+                Študenti sú povinní zvoliť si niektorú z uvedených oblastí záverečných prác a následne s vedúcim práce presne špecifikovať zadanie témy, ktoré musí byť vypísané v systéme. Od 1.4.2021 do 7.5.2021 sa študenti prihlasujú na dohodnuté témy v systéme AIS.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- OZNAM -->
+        <div class="col-lg-6 p-0 pl-lg-2">
+          <div class="card p-0 mb-4 bg-dark" id="vyzva">
+            <img class="card-img-top" src="images/2.jpg" alt="Príjmite výzvu" />
+            <div class="card-body bg-teal">
+              <h2 class="text-center card-title font-weight-bold text-white">Prijmite výzvu a otestujte sa.....</h2>
+              <hr class="border-success" />
+              <p class="card-text text-center"></p>
+              <p>Otestujte si svoje manažérske schopnosti...</p>
+              <p><a data-toggle="collapse" class="show-more text-light" href="#collapseOznam2"></a></p>
+              <div class="collapse" id="collapseOznam2">
+                <p class="text-center">
+                  <a href="https://www.fpv.umb.sk/app/cmsSiteBoxPhotoGalleryImage.php?disposition=i&cmsSiteBoxID=5927&size=750&ID=27757"><img src="https://www.fpv.umb.sk/app/cmsSiteBoxPhotoGalleryImage.php?disposition=i&cmsSiteBoxID=5927&size=750&ID=27757" class="w-75" alt="" /></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- OZNAM -->
+          <div class="card p-0 bg-dark">
+            <img class="card-img-top" src="https://www.fpv.umb.sk/image-handler/7033/603429257a01a/site-icon/width_560/tcs-codevita-sutazna-akcia-pre-programatorov.jpg" alt="TCS CodeVita" />
+            <div class="card-body bg-teal">
+              <h2 class="text-center card-title font-weight-bold text-white">TCS CodeVita - súťažná akcia pre programátorov</h2>
+              <hr class="border-purple" />
+              <p class="card-text text-center">Spoločnosť TATA Consultancy Services informuje o pripravenom 9. ročníku podujatia TCS CodeVita. Ide o súťažnú akciu pre mladých programátorov, v ktorej môžu študenti vyhrať prestížne ceny (granty, sťáže, či dokonca pracovné kontrakty v TCS). Táto súťaž sa teší veľkej populatire a doposiaľ sa jej zúčastnilo 230 000 študentov z 89 krajín vrátane Slovenska.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="bg-waves"></div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="fixed-background footer-fixed mt-5 d-flex align-items-center">
+        <div class="container">
+          <div class="row text-light d-flex justify-content-center my-4">
+            <img id="footerLogo" src="images/footer-logo.png" alt="" />
+          </div>
+          <div class="row text-light d-flex justify-content-center my-8">
+            <h4 id="footerText">&copy; 2021 <a class="text-light" href="mailto:vojtechm@outlook.com">Vojtech Molnár</a></h4>
+          </div>
+        </div>
+        <div class="fixed-wrap">
+          <div class="fixed"></div>
+        </div>
+        <!-- SPODNA SEKCIA FOOTERU -->
+      </div>
+      <div class="footer-bottom text-center bg-black p-3">
+        <p class="text-light m-0"><a id="footerLink" href="https://www.fpv.umb.sk/katedry/katedra-informatiky/" class="text-bottom-footer">https://www.fpv.umb.sk/</a></p>
+      </div>
+    </footer>
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script>
+      $(function () {
+        if (window.location.hash == '#summerhpc') {
+          $(collapseOznam1).collapse('show');
+        }
+        if (window.location.hash == '#vyzva') {
+          $(collapseOznam2).collapse('show');
+        }
+      });
+    </script>
+    <script src="node_modules\three\build\three.min.js"></script>
+    <script src="node_modules/vanta/dist/vanta.waves.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/oznamy.js"></script>
+  </body>
+</html>

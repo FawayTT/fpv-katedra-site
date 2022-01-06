@@ -1,0 +1,28 @@
+.navbar-brand {
+  img {
+    height: 5rem;
+  }
+  transition: filter 0.3s ease-in;
+  &:hover {
+    filter: drop-shadow(0px 0px 20px black);
+  }
+}
+.navbar-main {
+  min-height: 13vh !important;
+  background: linear-gradient(rgb(30, 83, 94), rgb(50, 123, 138));
+  font-size: 1.07rem;
+  font-weight: 500;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.788);
+  z-index: 2;
+}
+.nav-item {
+  padding: 0.7rem;
+}
+.nav-link {
+  color: rgba(255, 255, 255, 0.658);
+  transition: color 0.5s ease-out, font-size 0.5s ease;
+  &:hover {
+    font-size: 1.13rem;
+    color: white;
+  }
+}
