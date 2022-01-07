@@ -125,7 +125,7 @@ const clenoviaAnimation = () => {
 const infoAnimation = () => {
   const info = $('#info');
   gsap.fromTo(info, { y: 500 }, { y: 0, duration: 1, delay: 1.8 });
-  gsap.fromTo($('.otaznik'), { fontSize: 0 }, { fontSize: '2rem', ease: 'elastic.out(1, 0.3)', duration: 1, delay: 2.8 });
+  gsap.fromTo($('.otaznik'), { fontSize: 0 }, { fontSize: '2rem', ease: 'elastic.out(1, 0.3)', duration: 1, delay: 3 });
 };
 const footerAnimation = () => {
   const logo = $('#footerLogo');

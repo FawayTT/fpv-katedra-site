@@ -127,6 +127,32 @@
   border-radius: 15px;
 }
 
+// loader
+.loader {
+  border: 10px solid #f3f3f354; /* Light grey */
+  border-top: 10px solid #34d5db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.waiting {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 // media queries
 @media only screen and (max-width: 1620px) {
   .scrollarrow {
