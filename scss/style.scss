@@ -1,17 +1,9 @@
 @use 'navigation';
 @use 'carousel';
 @use 'content';
+@use 'global';
 
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
-  overflow: overlay;
-}
-main {
-  overflow: hidden;
-}
+// vlastne triedy
 .i-10 {
   z-index: 10 !important;
 }
@@ -24,7 +16,12 @@ main {
 .opacity-0 {
   opacity: 0;
 }
-// vlastne triedy
+.opacity-100 {
+  opacity: 100 !important;
+}
+.light-highlight {
+  filter: drop-shadow(1px 0 0 rgb(50, 123, 138, 0.5)) drop-shadow(0 1px 0 rgb(50, 123, 138, 0.5)) drop-shadow(-1px 0 0 rgb(50, 123, 138, 0.5)) drop-shadow(0 -1px 0 rgba(50, 123, 138, 0.5));
+}
 .border-light-white {
   border-color: rgba(255, 255, 255, 0.322);
 }
@@ -91,7 +88,7 @@ main {
   left: 50%;
   transform: translateX(-50%);
 }
-.text-sponsors {
+.text-partners {
   color: rgba(255, 255, 255, 0.719) !important;
   padding: 13px;
   box-shadow: 0px 0px 40px rgb(50, 123, 138);
@@ -109,8 +106,8 @@ main {
   min-height: 6rem;
   height: fit-content !important;
 }
-@media (min-width: 768px) {
-  .w-md-100 {
+.w-md-100 {
+  @media (min-width: 768px) {
     width: 100% !important;
   }
 }

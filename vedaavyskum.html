@@ -38,7 +38,7 @@
         </div>
       </nav>
     </header>
-    <main class="container my-4 bg-lightwhite rounded">
+    <main class="container my-4 bg-lightwhite rounded vedaavyskum">
       <h2 class="text-dark">Výskum v oblasti Informatiky na katedre je rozdelený do nasledujúcich oblastí:</h2>
       <ul class="list-group py-4 text-center oblasti bg-white rounded">
         <li class="list-group-item">počítačové videnie, strojové učenie a robotika,</li>
@@ -86,19 +86,8 @@
     <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
     <script src="node_modules\three\build\three.min.js"></script>
     <script src="node_modules/vanta/dist/vanta.globe.min.js"></script>
-    <script>
-      VANTA.GLOBE({
-        el: '.bg-globe',
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: true,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x7f7f7f,
-        backgroundColor: 0xffffff,
-      });
-    </script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/vedaavyskum.js"></script>
   </body>
 </html>

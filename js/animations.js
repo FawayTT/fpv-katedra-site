@@ -100,8 +100,8 @@ const animationExecute = (elements, func) => {
 };
 const contactsAnimation = () => {
   const contacts = $('#kontakt');
-  gsap.fromTo(contacts, { opacity: 0 }, { opacity: 1, duration: 5, delay: 1 });
-  gsap.fromTo(contacts, { filter: 'blur(20px)' }, { filter: 'blur(0px)', duration: 3, delay: 1 });
+  gsap.fromTo(contacts, { opacity: 0 }, { opacity: 1, duration: 2, delay: 1 });
+  gsap.fromTo(contacts, { filter: 'blur(20px)' }, { filter: 'blur(0px)', duration: 2, delay: 1 });
 };
 const galeriaAnimation = () => {
   const galeria = $('.galeria');
@@ -154,7 +154,7 @@ const showClenovia = () => {
     let topOfScreen = $(window).scrollTop();
     let bottomOfScreen = $(window).scrollTop() + $(window).innerHeight();
     let done = false;
-    let wait = i * 800;
+    let wait = i * 600;
     const animation = () => {
       if (bottomOfScreen > topOfElement && topOfScreen < bottomOfElement) {
         if (!done) {

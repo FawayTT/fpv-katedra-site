@@ -170,10 +170,12 @@
   counter-reset: li;
   text-transform: uppercase;
   li:nth-child(odd) {
-    background: rgba(0, 128, 128, 0.308);
+    /* background: rgba(0, 128, 128, 0.308); */
+    background: rgb(176, 216, 216);
   }
   li:nth-child(even) {
-    background: rgba(0, 128, 128, 0.082);
+    /*     background: rgba(0, 128, 128, 0.082); */
+    background: rgb(234, 245, 245);
   }
   li:before {
     counter-increment: li;
@@ -191,6 +193,19 @@
 }
 #clenovia {
   .card {
+    opacity: 0;
+  }
+}
+.vedaavyskum {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+.partners {
+  h2 {
+    opacity: 0;
+    transition: opacity 3s ease;
+  }
+  .row {
     opacity: 0;
   }
 }
