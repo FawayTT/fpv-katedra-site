@@ -119,6 +119,9 @@
 
 #galeria {
   background: rgba(0, 0, 0, 0.89) !important;
+  .gallery-image {
+    cursor: pointer;
+  }
   img {
     object-fit: cover;
     margin: 1rem;

@@ -1,7 +1,7 @@
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function () {
-    myFunction(this);
+    loadPerson(this);
     $('.waiting').hide();
     VANTA.NET({
       el: '.bg-net',
@@ -23,7 +23,7 @@ function loadDoc() {
   xhttp.open('GET', 'clenovia.xml');
   xhttp.send();
 }
-function myFunction(xml) {
+function loadPerson(xml) {
   const xmlDoc = xml.responseXML;
   const person = xmlDoc.getElementsByTagName('person');
   for (let i = 0; i < person.length; i++) {
