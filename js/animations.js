@@ -109,7 +109,7 @@ const galeriaAnimation = () => {
   t1.fromTo('.galeria-text', { scale: 1.5 }, { scale: 1 });
   t1.fromTo(galeria, { height: '200px' }, { height: '80px' }, '<');
 };
-
+let run = true;
 const clenoviaAnimation = () => {
   const clenovia = $('.clenovia');
   const clenoviaImg = $('#clenoviaImg');
@@ -121,11 +121,47 @@ const clenoviaAnimation = () => {
   t1.fromTo(clenoviaImg, { opacity: 0 }, { opacity: 1 });
   t1.fromTo(clenoviaImg, { borderRadius: 0 }, { borderRadius: '5%' }, '<70%');
   t1.fromTo(clenoviaImg, { filter: 'saturate(0%)' }, { filter: 'saturate(100%)', duration: 2 });
+  if (run) {
+    infoAnimation(true);
+    run = false;
+  }
 };
 const infoAnimation = () => {
   const info = $('#info');
-  gsap.fromTo(info, { y: 500 }, { y: 0, duration: 1, delay: 1.8 });
-  gsap.fromTo($('.otaznik'), { fontSize: 0 }, { fontSize: '2rem', ease: 'elastic.out(1, 0.3)', duration: 1, delay: 3 });
+  const trigger = $('.footer');
+  let t1 = gsap.timeline();
+  let done = false;
+  t1.to(info, { y: 500 });
+  setTimeout(() => {
+    t1.fromTo(info, { y: 500 }, { y: 0, duration: 1 });
+    t1.fromTo($('.otaznik'), { fontSize: 0 }, { fontSize: '2rem', ease: 'elastic.out(1, 0.3)', duration: 1, delay: 1 }, '<');
+  }, 2800);
+  done = true;
+  const hideShow = () => {
+    let topOfElement = trigger.offset().top;
+    let bottomOfElement = trigger.offset().top + trigger.outerHeight();
+    let topOfScreen = $(window).scrollTop();
+    let bottomOfScreen = $(window).scrollTop() + $(window).innerHeight();
+    $(window).on('scroll', () => {
+      topOfScreen = $(window).scrollTop();
+      bottomOfScreen = $(window).scrollTop() + $(window).innerHeight();
+      if (bottomOfScreen > topOfElement) {
+        if (!done) {
+          t1.play();
+          done = true;
+        }
+      } else {
+        if (done) {
+          console.log('nice');
+          t1.reverse();
+          done = false;
+        }
+      }
+    });
+  };
+  setTimeout(() => {
+    hideShow();
+  }, 3800);
 };
 const footerAnimation = () => {
   const logo = $('#footerLogo');

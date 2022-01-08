@@ -236,9 +236,12 @@
     cursor: pointer;
   }
   i {
-    transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in, transform 0.5s ease;
     &:hover {
       color: rgb(50, 123, 138, 0.5);
+    }
+    &:active {
+      transform: scale(2);
     }
   }
 }
