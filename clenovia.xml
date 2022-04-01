@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fpv>
+  <person>
+    <name>Mgr. Adam Dudáš, PhD.</name>
+    <job>Vysokoškolský účiteľ</job>
+    <photo>https://www.fpv.umb.sk/app/accountJpegPhoto.php?ID=9457</photo>
+    <telephone>048 446 7130</telephone>
+    <email>adam.dudas@umb.sk</email>
+    <position>Odborný asistent</position>
+    <room>F130</room>
+  </person>
+  <person>
+    <name>Ing. Dana Horváthová, PhD.</name>
+    <job>Vysokoškolská učiteľka, Katedrový koordinátor pre ERASMUS+</job>
+    <photo>https://www.fpv.umb.sk/app/accountJpegPhoto.php?ID=9254</photo>
+    <telephone>048 446 7126</telephone>
+    <email>Dana.Horvathova@umb.sk</email>
+    <position>Odborná asistentka</position>
+    <room>126b</room>
+  </person>
+  <person>
+    <name>RNDr. Miroslav Melicherčík, PhD.
+    </name>
+    <job>Vedúci katedry, Vysokoškolský učiteľ, Študijný poradca pre AI</job>
+    <photo>https://www.fpv.umb.sk/app/accountJpegPhoto.php?ID=9243</photo>
+    <telephone>048 446 7132, 048 446 7124</telephone>
+    <email>miroslav.melichercik@umb.sk</email>
+    <position>Odborný asistent</position>
+    <room>132</room>
+  </person>
+  <person>
+    <name>PaedDr. Patrik Voštinár, PhD.
+    </name>
+    <job>Vysokoškolský účiteľ</job>
+    <photo>https://www.fpv.umb.sk/app/accountJpegPhoto.php?ID=9368</photo>
+    <telephone>048 446 7124</telephone>
+    <email>Patrik.Vostinar@umb.sk</email>
+    <position>Odborný asistent</position>
+    <room>124</room>
+  </person>
+  <person>
+    <name>Mgr. Michal Vagač, PhD.
+    </name>
+    <job>Vysokoškolský účiteľ</job>
+    <photo>https://www.fpv.umb.sk/app/accountJpegPhoto.php?ID=9256</photo>
+    <telephone>048 446 7125</telephone>
+    <email>Michal.Vagac@umb.sk</email>
+    <position>Odborný asistent</position>
+    <room>F126a</room>
+  </person>
+  <person>
+    <name>RNDr. Alžbeta Michalíková, PhD.</name>
+    <job>Vysokoškolská učiteľka, členka akademického senátu UMB, členka AS FPV UMB, študijný poradca pre UI
+    </job>
+    <photo>https://www.fpv.umb.sk/app/accountJpegPhoto.php?ID=9253</photo>
+    <telephone>048 446 7129</telephone>
+    <email>Alzbeta.Michalikova@umb.sk</email>
+    <position>Odborná asistentka</position>
+    <room>F129</room>
+  </person>
+</fpv>
