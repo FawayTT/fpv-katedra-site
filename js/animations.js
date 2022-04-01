@@ -22,7 +22,21 @@ const carouselAnimate = () => {
   t1.fromTo(imgs, { filter: 'blur(20px)' }, { filter: 'blur(0px) brightness(40%)' });
   t1.fromTo(captions, { filter: 'blur(20px)' }, { filter: 'blur(0px)', duration: 0.5 }, '<');
   t1.fromTo(imgs, { scale: 1.6 }, { scale: 1 });
-  t1.fromTo('.scrollarrow', { opacity: 0, bottom: 400 }, { opacity: 1, bottom: 50, ease: 'bounce.out', duration: 3, delay: 1 }, '<50%');
+  t1.fromTo(
+    '.scrollarrow',
+    { opacity: 0, bottom: 400 },
+    {
+      opacity: 1,
+      bottom: 50,
+      ease: 'bounce.out',
+      duration: 3,
+      delay: 1,
+      onComplete: () => {
+        document.documentElement.style.overflowY = 'overlay';
+      },
+    },
+    '<50%',
+  );
   let gsapEnable = true;
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
