@@ -1,3 +1,4 @@
+document.documentElement.style.overflowY = 'hidden';
 $(navbarAnimate(), carouselAnimate(), showOznamy());
 $(animationExecute($('#kontakt'), contactsAnimation));
 $(animationExecute($('.galeria'), galeriaAnimation));
@@ -14,6 +15,7 @@ const imageViewer = () => {
   const nextBtn = $('.image-container> .next-btn');
   let t = 0;
   viewerBG.on('click', () => {
+    document.documentElement.style.overflowY = 'overlay';
     viewer.fadeOut(500);
     t = 0;
   });
@@ -21,6 +23,7 @@ const imageViewer = () => {
   for (let i = 0; i < images.length; i++) {
     const element = images.eq(i);
     element.on('click', () => {
+      document.documentElement.style.overflowY = 'hidden';
       t = i;
       image.prop('src', element.attr('src'));
       viewer.fadeIn(500);
